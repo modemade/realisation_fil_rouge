@@ -1,0 +1,59 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,fr);
+    background-color:blue;
+}
+
+ul {
+    border-radius: 10px;
+    list-style: none;
+    background-color: blanchedalmond;
+    max-width: fit-content;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    font-size: larger;
+    ;
+}
+
+.ul01 {
+    margin: 10px;
+}
+
+button {
+    padding: 10px;
+    width: 50px;
+}
+
+.btn {
+    background-color: #FFF22C;
+    direction: left;
+}
+
+.verticalLine {
+    border-left: thick solid #ff0000;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer{
+    display:flex;
+    justify-content: space-between;
+}
+
+.img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin: 10px;
+}
+img{
+    width: 20px;
+    height: 20px;
+}
