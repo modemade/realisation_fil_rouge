@@ -1,59 +1,146 @@
-.container{
-    display: grid;
-    grid-template-columns: repeat(3,fr);
-    background-color:blue;
-}
+/* les liste en navbar */
 
-ul {
+.ul01{
+    /* margin: 10px; */
+    background-color: lightblue;
+    width: fit-content;
     border-radius: 10px;
     list-style: none;
-    background-color: blanchedalmond;
-    max-width: fit-content;
+    grid-column: 1;
+    margin-left: 30rem;
 }
 
-a {
-    text-decoration: none;
+
+/* les lien */
+
+a{
+    text-decoration:none;
 }
 
-li {
-    font-size: larger;
-    ;
+/* Boutton pour poster */
+
+.btn{
+    margin: 0;
+    border-radius: 30px;
+    width: 150px;
 }
 
-.ul01 {
-    margin: 10px;
-}
+/* icon  */
 
-button {
-    padding: 10px;
-    width: 50px;
-}
-
-.btn {
-    background-color: #FFF22C;
-    direction: left;
-}
-
-.verticalLine {
-    border-left: thick solid #ff0000;
-}
-
-h1 {
-    text-align: center;
-}
-
-footer{
-    display:flex;
-    justify-content: space-between;
-}
-
-.img{
-    width: 50px;
-    height: 50px;
-    display: flex;
-    margin: 10px;
-}
 img{
-    width: 20px;
-    height: 20px;
+    margin: 10px;
+}
+
+/* changer de couleur sur la navbar */
+
+.ul01:hover{
+    list-style: none;
+}
+
+/* page entière  */
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(2,fr);
+    background-color:lightcyan;
+}
+
+/* le contenu principale au milieu de la page  */
+
+.divtexte{
+    background-color:lightgoldenrodyellow;
+    height:fit-content;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* le contenu principale au milieu de la page pour la divtexte */
+
+.dive{
+    grid-column: 2;
+}
+
+/* changement de couleur de la divtexte  */
+
+.divtexte:hover{
+    height:fit-content;
+    border-radius: 10px;
+    background-color:lightcoral;
+    margin: 10px;
+}
+
+/* liste des icon sur la divtexte */
+
+.ul02{
+    list-style: none;
+    display:flex;
+    margin: 0px;
+}
+
+/* la div qui contien search */
+.message{
+    grid-row: 1;
+    grid-column:3;
+}
+
+/* la bar search */
+
+#recherche{
+    background-color:lavender;
+    border-radius: 30px;
+    background-image: url(./img/recherche.png) right repeat-x !important;
+    margin: 10px;
+    width: 250px;
+    height:40px;
+}
+
+/* case des trend  */
+
+.trend{
+    grid-column:3;
+    background-color: lightblue;
+    border-radius:20px;
+    height: fit-content;
+    width:max-content;
+    margin-top: 10px;
+}
+
+/* icon search */
+
+.inputsearch{
+    position: absolute;
+    right: 3px;
+    top: 7px;
+    height: 25px;
+}
+
+/* le input search  */
+.message01{
+    display: inline-block;
+    position: relative;
+}
+
+/* les article qui sont dans le trend */
+
+.article01:hover{
+    background-color:darkcyan;
+    border-radius:15px;
+    margin: 10px;
+}
+
+/* la zone pour la navbar */
+
+.ul01 a{
+display:flex;
+align-items: center;
+}
+
+.nav01{
+    justify-self: end;
+}
+
+li:hover{
+    background-color:darkcyan;
+    border-radius:20px;
 }
